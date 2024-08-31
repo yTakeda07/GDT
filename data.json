@@ -309,6 +309,58 @@
     "Velho Oeste",
     "Zumbis"
   ],
+  "AçãoC": [
+    "Vena Oasis",
+    "Playsystem",
+    "DreamVast",
+    "Playsystem 2",
+    "mBox",
+    "PPS",
+    "mBox 360",
+    "Playsystem 3",
+    "mBox One",
+    "Playsystem 4",
+    "Playsystem 5"
+  ],
+  "AventuraC": [
+    "PC",
+    "G64"
+  ],
+  "rpgC": [
+    "Playsystem",
+    "Playsystem 2 e 4",
+    "GS",
+    "PPS",
+    "mBox 360"
+  ],
+  "SimulaçãoC": [
+    "PC",
+    "Super TES",
+    "DreamVast",
+    "GS",
+    "PPS",
+    "mBox 360",
+    "Playsystem 3 e 5",
+    "Wuu"
+  ],
+  "EstratégiaC": [
+    "PC",
+    "G64"
+  ],
+  "CasualC": [
+    "TES",
+    "Master V",
+    "Gameling",
+    "Vena Gear",
+    "Game Sphere",
+    "GS",
+    "Nuu",
+    "grPhone",
+    "grPad",
+    "Wuu",
+    "OYA",
+    "mBox Next"
+  ],
 
 
     "Ação": {
