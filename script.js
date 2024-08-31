@@ -59,10 +59,15 @@ function verificar (){ //função ativa no onclick do butao
     
         // Adiciona conteúdo às novas células
         celula1.textContent = temaU;
-        celula2.textContent = generos;
+        generos.forEach(genero=>{
+        celula2.innerHTML += "<button class='botoes' onclick='genero(this)' value='"+temaU+"' name='"+genero+"' >"+genero+"</button>";
+        })
         celula3.textContent = publico;
     
     });
-}
+};
 
-
+function genero(botao){
+let caixa = document.getElementById("Esquerda")
+caixa.innerText= botao.value+" - "+botao.name
+};
