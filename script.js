@@ -61,13 +61,55 @@ function verificar (){ //função ativa no onclick do butao
         celula1.textContent = temaU;
         generos.forEach(genero=>{
         celula2.innerHTML += "<button class='botoes' onclick='genero(this)' value='"+temaU+"' name='"+genero+"' >"+genero+"</button>";
-        })
-        celula3.textContent = publico;
+        });
+        publico.forEach(publi=>{
+        celula3.textContent += publi+" "
+        });
     
     });
 };
 
-function genero(botao){
-let caixa = document.getElementById("Esquerda")
-caixa.innerText= botao.value+" - "+botao.name
+function genero(botao){ //função do click do butao, com parametro dele mesmo
+let caixa = document.getElementById("Esquerda") //pega o elemento que eu vou escrever as coisas
+let tema = botao.value //graças ao parametro botao consigo pegar o valor dele
+let genero = botao.name //mesma coisa só que com o name
+
+fetch('data.json')
+                .then(response => response.json())
+                .then(dados => {
+
+//abaixo eu escrevo os dados do desenvolvimento do jeito mais porco possivel, com certeza tem um jeito melhor mas eu realmente não estou afim de arrumar, o importante é funcionar
+                    caixa.innerHTML= `Especificações para ${tema} - ${genero}:
+        <br>
+        <h1>Fase 1</h1>
+        <p>
+        Engine: ${dados[genero]["Fase 1"]["Engine"]} <!-- pega as informações de um array super complexo kk  -->
+        <br>
+        Jogabilidade:  ${dados[genero]["Fase 1"]["Jogabilidade"]}
+        <br>
+        História/Missões:   ${dados[genero]["Fase 1"]["História/Missões"]}
+        </p>          
+        <br>  
+        <h1>Fase 2</h1>
+        <p>
+        Diálogos: ${dados[genero]["Fase 2"]["Diálogos"]}
+        <br>
+        Design de Nível:  ${dados[genero]["Fase 2"]["Design de Nível"]}
+        <br>
+        AI:   ${dados[genero]["Fase 2"]["AI"]}
+        </p>  
+        <br>  
+        <h1>Fase 3</h1>
+        <p>
+        Design Mundial: ${dados[genero]["Fase 3"]["Design Mundial"]}
+        <br>
+        Gráficos:  ${dados[genero]["Fase 3"]["Gráficos"]}
+        <br>
+        Som:   ${dados[genero]["Fase 3"]["Som"]}
+        </p> `
+                })
+                .catch(error => {
+                    console.error('Erro ao carregar o JSON:', error);
+                });
+
 };

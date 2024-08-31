@@ -17,8 +17,10 @@ body{
 
 }
 #Esquerda{
+padding: 20px;
+
 width: 50%;
-height: 100vh;
+min-height: 100vh;
 background-color: lightgray;
 box-sizing: border-box;
 }

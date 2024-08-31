@@ -282,6 +282,7 @@
     "História Alternativa",
     "Assassinato",
     "Comédia",
+    "Ciência Maluca",
     "Crime",
     "Cyberpunk",
     "Desastre",
@@ -307,6 +308,109 @@
     "Lobisomen",
     "Velho Oeste",
     "Zumbis"
-  ]
+  ],
 
-}
+
+    "Ação": {
+      "Fase 1": {
+        "Engine": 100,
+        "Jogabilidade": 80,
+        "História/Missões": 0
+      },
+      "Fase 2": {
+        "Diálogos": 0,
+        "Design de Nível": 80,
+        "AI": 100
+      },
+      "Fase 3": {
+        "Design Mundial": 0,
+        "Gráficos": 100,
+        "Som": 80
+      }
+    },
+    "Aventura": {
+      "Fase 1": {
+        "Engine": 0,
+        "Jogabilidade": 80,
+        "História/Missões": 100
+      },
+      "Fase 2": {
+        "Diálogos": 100,
+        "Design de Nível": 50,
+        "AI": 0
+      },
+      "Fase 3": {
+        "Design Mundial": 100,
+        "Gráficos": 80,
+        "Som": 0
+      }
+    },
+    "RPG": {
+      "Fase 1": {
+        "Engine": 100,
+        "Jogabilidade": 80,
+        "História/Missões": 0
+      },
+      "Fase 2": {
+        "Diálogos": 100,
+        "Design de Nível": 80,
+        "AI": 0
+      },
+      "Fase 3": {
+        "Design Mundial": 100,
+        "Gráficos": 80,
+        "Som": 40
+      }
+    },
+    "Simulação": {
+      "Fase 1": {
+        "Engine": 100,
+        "Jogabilidade": 100,
+        "História/Missões": 0
+      },
+      "Fase 2": {
+        "Diálogos": 100,
+        "Design de Nível": 100,
+        "AI": 0
+      },
+      "Fase 3": {
+        "Design Mundial": 0,
+        "Gráficos": 100,
+        "Som": 80
+      }
+    },
+    "Estratégia": {
+      "Fase 1": {
+        "Engine": 80,
+        "Jogabilidade": 100,
+        "História/Missões": 0
+      },
+      "Fase 2": {
+        "Diálogos": 0,
+        "Design de Nível": 100,
+        "AI": 80
+      },
+      "Fase 3": {
+        "Design Mundial": 100,
+        "Gráficos": 0,
+        "Som": 80
+      }
+    },
+    "Casual": {
+      "Fase 1": {
+        "Engine": 0,
+        "Jogabilidade": 100,
+        "História/Missões": 0
+      },
+      "Fase 2": {
+        "Diálogos": 0,
+        "Design de Nível": 100,
+        "AI": 0
+      },
+      "Fase 3": {
+        "Design Mundial": 0,
+        "Gráficos": 100,
+        "Som": 80
+      }
+    }
+  }
