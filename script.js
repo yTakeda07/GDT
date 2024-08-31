@@ -113,3 +113,31 @@ fetch('data.json')
                 });
 
 };
+
+        // Obtém o modal
+        var modal = document.getElementById("myModal");
+
+        // Obtém a imagem e o modal
+        var img = document.getElementById("myImg");
+        var modalImg = document.getElementById("img01");
+
+        // Quando a imagem é clicada, abre o modal
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+
+        // Obtém o botão de fechar
+        var span = document.getElementById("closeModal");
+
+        // Quando o botão de fechar é clicado, fecha o modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
+        // Quando o usuário clica fora da imagem, fecha o modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
